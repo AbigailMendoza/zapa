@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    label {
+        display:  block;
+        float: left;
+        width: 100px; 
+    }
+</style>
+
+<script src="js/validacionregistro.js"></script>
+
+</head>
+
+<body>
+    <h1>Registrese</h1>
+        <form name ="formularioRegistro" class="formularioTipo1" method="post" action="index.html" novalidate="">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id = 'nombre' name="nombre"/>
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" id = 'apellido' name="apellido"/>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required autocomplete="off" >
+            </div>
+            <div>
+                <label for="pass1">Clave</label>
+                <input type="password" name="pass1" id="pass1" required>
+            </div>
+            <div>
+                <label for="pass2">Repita clave</label>
+                <input type="password" name="pass2"id="pass2" required>
+            </div>
+            <label><input type="submit" value="Enviar"><input type="reset" value="Cancelar"></label>
+        </form>
+        
+   
+</body>
+</html>
