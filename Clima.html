@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Zapateria</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-	<link rel="stylesheet" href="css/Estiloresponsive.css">
-	
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapateria</title>
+    <link rel="icon" href="img/descarga.png">
+    <link rel="stylesheet" href="css/estilosZapa.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+    
 </head>
-<body>
-	<div class="padre">
-		<header class="header">
+
+    <body onload="getWeatherByLocation('Buenos Aires')"> 
+        <header class="header">
 			<div class="item item1"><h1>CALZADOS ELEGANTES</h1>
 				<div><img src="img/descarga.png" alt=""></div>
 				<nav >
@@ -24,24 +26,23 @@
 				   <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
 				</nav> 
 			</div>
-		</header>
-		<article class="articulo"><p>Zapatos realizados de forma artesanal en materiales nobles de hormas amplias y atemporales. Somos Hermanas Aguila, hacemos zapatos cómodos y coloridos estilo...</p></article>
-		<aside class="aside izquierda"><img src="img/shoe.jpg" alt=""></aside>
-		<aside class="aside derecha">	
-			<h2 >Sucurales en todo el pais</h2>
-			<div>santa fe</div>
-			<div>Cordoba</div>
-			<div>bueno aires</div>
-		</aside>
-		
+		</header> 
+        <form id="form">
+             <!-- <input type="text" id="search" placeholder="Estado del clima " autocomplete="off" > -->
+        </form>
+        <main id="main"  >
+
+        </main>
         <footer class="footer">
-  			<div id="current_date" class="footer"></p>
-			<script>
-        		var fecha=new Date().toLocaleDateString();
- 	    		document.getElementById("current_date").innerHTML = fecha;
-			</script>
+  
+			<div id="current_date" class="footer"></p>
+				<script>
+                var fecha=new Date().toLocaleDateString();
+            	document.getElementById("current_date").innerHTML = fecha;
+		    	</script>
 			</div>
+
 		</footer>
-	</div>
+        <script src="js/tempera.js"></script>
 </body>
 </html>

@@ -24,6 +24,7 @@
                <a style="background-color: rgba(147, 203, 56, 0.254);" href="Registrese.html">Registrese</a>
                <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="sucursales.html">sucursales</a> 
                <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Carrito.html">Comprado</a> 
+               <a style="background-color: rgba(147, 203, 56, 0.254) ;" href="Clima.html">Clima</a> 
             
             </nav> 
         </div>
@@ -47,19 +48,22 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="comprados.js"></script>
+    <script src="js/Comprados.js"></script>
     <footer class="footer">
   
         <div id="current_date" class="footer"></p>
             <script>
-                      document.getElementById("current_date").innerHTML = Date();
+                    
+    var fecha=new Date().toLocaleDateString();
+    
+    
+                      document.getElementById("current_date").innerHTML = fecha;
                       </script>
                   </div>
-
+    
     </footer>
 </body>
 
 </html>
-
 
 
